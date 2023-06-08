@@ -1,10 +1,11 @@
-# pharmaceuticals
-
 ## Pharmaceuticals
 
-Supporting data for our studies regarding pharmaceuticals:
+# Supporting data for our studies regarding pharmaceuticals
 
-- Optimal gas-phase structures of 16 pharmaceutical molecules obtained using conformational analysis in RDKit (http://www.rdkit.org) and further refinement at the DFT/BP86/pVTZ-D3 level. 
+**Optimal gas-phase structures of 16 pharmaceutical molecules**
+
+
+obtained using conformational analysis in RDKit (http://www.rdkit.org) and further refinement at the DFT/BP86/pVTZ-D3 level. 
 
 To identify the optimal vacuum geometry of an API, it is
 essential to start with a thorough conformational analysis. For
