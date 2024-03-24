@@ -10,7 +10,7 @@
 
 Closer details are given in [Klajmon, M. Purely Predicting the Pharmaceutical Solubility: What to Expect from PC-SAFT and COSMO-RS? *Mol. Pharmaceutics* **2022**, *19*, 4212-4232](https://doi.org/10.1021/acs.molpharmaceut.2c00573).
 
-- COSMO-SAC sigma-profiles of the above 12 pharmaceutical molecules:
+- COSMO-SAC sigma-profiles of the above 12 molecules:
 > Determined using [Gaussian 16](https://gaussian.com/gaussian16/) (revision C.01) at the DFT BVP86/TZVP level of theory; the solvation was accounted for using [the conductor-like polarizable continuum model](https://gaussian.com/scrf/) with infinite dielectric limit (Gaussian specification line: **#p BVP86/TZVP scf=tight density=current scrf=cosmors**).
 
 Acronyms: CBZ = carbamazepine; DBF = dibenzofuran; GSF = griseofulvin; IBP = ibuprofen; IMC = indomethacin; NIF = nifedipine; NPX = naproxen; PCM = paracetamol; RBV = ribavirin; SIM = simvastatin; TBA = tolbutamide; VST = valsartan
