@@ -11,6 +11,10 @@
 Closer details are given in [Klajmon, M. Purely Predicting the Pharmaceutical Solubility: What to Expect from PC-SAFT and COSMO-RS? *Mol. Pharmaceutics* **2022**, *19*, 4212-4232](https://doi.org/10.1021/acs.molpharmaceut.2c00573).
 
 - COSMO-SAC sigma-profiles (.sigma) of the above 12 compounds at their optimal gas-phase geometries:
-> Determined using [Gaussian 16](https://gaussian.com/gaussian16/) (revision C.01) at the DFT BVP86/TZVP level of theory; the solvation was accounted for using [the conductor-like polarizable continuum model](https://gaussian.com/scrf/) with infinite dielectric limit (Gaussian specification line: **#p BVP86/TZVP scf=tight density=current scrf=cosmors**).
+> Determined from the COSMO surface screening charge densities calculated with [Gaussian 16](https://gaussian.com/gaussian16/) (revision C.01) (Frisch *et al.*, 2019) at the DFT BVP86/TZVP level of theory; the solvation was accounted for using [the conductor-like polarizable continuum model](https://gaussian.com/scrf/) with infinite dielectric limit (Gaussian specification line: **#p BVP86/TZVP scf=tight density=current scrf=cosmors**).
+> For sigma-profile calculation based on the COSMO surface screening charge densities, we used the [to_sigma.py tool](https://github.com/usnistgov/COSMOSAC/blob/9388a88d9a9ff7bbc0bbb2e4aa0095aba3e703ff/profiles/to_sigma.py)
 
 Acronyms: CBZ = carbamazepine; DBF = dibenzofuran; GSF = griseofulvin; IBP = ibuprofen; IMC = indomethacin; NIF = nifedipine; NPX = naproxen; PCM = paracetamol; RBV = ribavirin; SIM = simvastatin; TBA = tolbutamide; VST = valsartan
+
+Reference
+Frisch *et al.*, 2019
