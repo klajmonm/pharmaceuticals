@@ -11,10 +11,16 @@
 Closer details are given in [Klajmon (2022)](https://doi.org/10.1021/acs.molpharmaceut.2c00573).
 
 - COSMO-SAC sigma-profiles (.sigma) of the 11 drugs at their optimal gas-phase geometries:
-> Determined from the COSMO surface screening charge densities calculated with [Gaussian 16](https://gaussian.com/gaussian16/) (revision C.01) (Frisch *et al.*, 2019) at the DFT BVP86/TZVP level of theory; the solvation was accounted for using [the conductor-like polarizable continuum model](https://gaussian.com/scrf/) with infinite dielectric limit. (Gaussian specification line:
-``` #p BVP86/TZVP scf=tight density=current scrf=cosmors ```). For sigma-profile calculation based on the COSMO surface screening charge densities, we used the [to_sigma.py](https://github.com/usnistgov/COSMOSAC/blob/9388a88d9a9ff7bbc0bbb2e4aa0095aba3e703ff/profiles/to_sigma.py) tool.
+> Determined from the COSMO surface screening charge densities calculated with [Gaussian 16]([https://gaussian.com/gaussian16/](https://gaussian.com/gaussian16/)) (revision C.01) at the DFT BVP86/TZVP level of theory; the solvation was accounted for using [the conductor-like polarizable continuum model](https://gaussian.com/scrf/) with infinite dielectric limit. (Gaussian specification line:
+``` #p BVP86/TZVP scf=tight density=current scrf=cosmors ```). For sigma-profile calculation based on the COSMO surface screening charge densities, we used the [to_sigma.py](https://github.com/usnistgov/COSMOSAC/blob/9388a88d9a9ff7bbc0bbb2e4aa0095aba3e703ff/profiles/to_sigma.py) tool. When using these sigma-profiles, please also cite Gaussian as follows:
+
+```bibtex
+@misc{g16,
+author={M. J. Frisch and G. W. Trucks and H. B. Schlegel and G. E. Scuseria and M. A. Robb and J. R. Cheeseman and G. Scalmani and V. Barone and G. A. Petersson and H. Nakatsuji and X. Li and M. Caricato and A. V. Marenich and J. Bloino and B. G. Janesko and R. Gomperts and B. Mennucci and H. P. Hratchian and J. V. Ortiz and A. F. Izmaylov and J. L. Sonnenberg and D. Williams-Young and F. Ding and F. Lipparini and F. Egidi and J. Goings and B. Peng and A. Petrone and T. Henderson and D. Ranasinghe and V. G. Zakrzewski and J. Gao and N. Rega and G. Zheng and W. Liang and M. Hada and M. Ehara and K. Toyota and R. Fukuda and J. Hasegawa and M. Ishida and T. Nakajima and Y. Honda and O. Kitao and H. Nakai and T. Vreven and K. Throssell and Montgomery, {Jr.}, J. A. and J. E. Peralta and F. Ogliaro and M. J. Bearpark and J. J. Heyd and E. N. Brothers and K. N. Kudin and V. N. Staroverov and T. A. Keith and R. Kobayashi and J. Normand and K. Raghavachari and A. P. Rendell and J. C. Burant and S. S. Iyengar and J. Tomasi and M. Cossi and J. M. Millam and M. Klene and C. Adamo and R. Cammi and J. W. Ochterski and R. L. Martin and K. Morokuma and O. Farkas and J. B. Foresman and D. J. Fox},
+title={Gaussian˜16 {R}evision {C}.01},
+year={2016},
+note={Gaussian Inc. Wallingford CT}
+} 
+```
 
 Acronyms: CBZ = carbamazepine; GSF = griseofulvin; IBP = ibuprofen; IMC = indomethacin; NIF = nifedipine; NPX = naproxen; PCM = paracetamol; RBV = ribavirin; SIM = simvastatin; TBA = tolbutamide; VST = valsartan
-
-### Reference
-> (Frisch *et al.*, 2019) M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria, M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, G. A. Petersson, H. Nakatsuji, X. Li, M. Caricato, A. V. Marenich, J. Bloino, B. G. Janesko, R. Gomperts, B. Mennucci, H. P. Hratchian, J. V. Ortiz, A. F. Izmaylov, J. L. Sonnenberg, D. Williams-Young, F. Ding, F. Lipparini, F. Egidi, J. Goings, B. Peng, A. Petrone, T. Henderson, D. Ranasinghe, V. G. Zakrzewski, J. Gao, N. Rega, G. Zheng, W. Liang, M. Hada, M. Ehara, K. Toyota, R. Fukuda, J. Hasegawa, M. Ishida, T. Nakajima, Y. Honda, O. Kitao, H. Nakai, T. Vreven, K. Throssell, J. A. Montgomery, Jr., J. E. Peralta, F. Ogliaro, M. J. Bearpark, J. J. Heyd, E. N. Brothers, K. N. Kudin, V. N. Staroverov, T. A. Keith, R. Kobayashi, J. Normand, K. Raghavachari, A. P. Rendell, J. C. Burant, S. S. Iyengar, J. Tomasi, M. Cossi, J. M. Millam, M. Klene, C. Adamo, R. Cammi, J. W. Ochterski, R. L. Martin, K. Morokuma, O. Farkas, J. B. Foresman, and D. J. Fox. Gaussian 16, Revision C.01; Gaussian, Inc., Wallingford CT, 2019.
